@@ -13,7 +13,7 @@ The data used for the clean and analysis process was from the "Human Acivity Rec
 
 ## How script works?
 
-The Script workflow.R file have inside it Five steps taged with ### and the proper step value.
+The Script workflow.R (run_analysis also) file have inside it Five steps taged with ### and the proper step value.
 
 This steps were the following:
 Merges the training and the test sets to create one data set.

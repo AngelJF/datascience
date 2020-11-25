@@ -1,2 +1,5 @@
-setwd("C:/Users/user/Desktop/datascience/exdata_data_household_power_consumption")
-powerc<- read.csv("household_power_consumption.txt", sep = ";")
+setwd("C:/Users/user/Desktop/datascience/power comp data")
+powerc<- read.csv(unz('household_power_consumption.zip', "household_power_consumption.txt"), sep = ";")
+powerc$Date<- as.Date(powerc$Date, "%d/ %m/ %Y")
+powerc$Time<- strptime(powerc$Time, "%H:%M:%S")
+powerc2007<- with(powerc, powerc[(Date >= '2007-02-01' & Date <= '2007-02-02'),])
